@@ -31,7 +31,7 @@ import java.lang.reflect.Method;
  *
  * @author Cliff Biffle
  */
-class EventHandler {
+public class EventHandler {
 
   /** Object sporting the handler method. */
   private final Object target;
