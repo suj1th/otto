@@ -7,14 +7,14 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-public class ExceptionHandlerThreadPool extends ThreadPoolExecutor {
+public class ErrorHandlingExecutor extends ThreadPoolExecutor {
 
 	private static final int _ONE = 1;
 	private static final int _EIGHT = 8;
 	private static final BlockingQueue<Runnable> workQueue = new LinkedBlockingQueue<Runnable>();
 
 
-	public ExceptionHandlerThreadPool(){
+	public ErrorHandlingExecutor(){
 		super(_ONE, _EIGHT, _ONE, TimeUnit.MINUTES, workQueue);
 	}
 

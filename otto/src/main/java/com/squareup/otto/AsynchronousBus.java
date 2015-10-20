@@ -12,7 +12,7 @@ import java.util.concurrent.ExecutorService;
 public class AsynchronousBus extends Bus {
 	
 	
-	ExecutorService executorService = new ExceptionHandlerThreadPool();
+	ExecutorService executorService = new ErrorHandlingExecutor();
 
 	 /**
 	   * Dispatches {@code event} to the handler in {@code wrapper}.
